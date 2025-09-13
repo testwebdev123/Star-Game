@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartoon Collector — HTML/CSS/JS Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="game-wrap" role="application" aria-label="Cartoon Collector game">
+    <header>
+      <h1>Cartoon Collector</h1>
+      <div class="hud">
+        <div class="badge">Score: <span id="score">0</span></div>
+        <div class="badge">Lives: <span id="lives">3</span></div>
+        <div class="badge">Level: <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <div class="stage">
+      <canvas id="game"></canvas>
+
+      <!-- Mobile/touch controls -->
+      <div class="controls" aria-hidden="true">
+        <div class="btn" id="left">◀</div>
+        <div class="btn" id="right">▶</div>
+      </div>
+      <div class="right-controls" aria-hidden="true">
+        <div class="btn" id="jump">▲</div>
+        <div class="btn" id="pause">❚❚</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="small muted">Use ← → to move, ↑ or Space to jump. Collect stars, avoid critters.</div>
+      <div>
+        <button id="restart">Restart</button>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/custom.js"></script>
+</body>
+</html>
